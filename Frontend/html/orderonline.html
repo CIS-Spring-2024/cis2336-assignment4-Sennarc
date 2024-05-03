@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Skillet Cafeteria</title>
+    <link rel="stylesheet" href="../css/orderonline-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend&display=swap"
+    />
+  </head>
+
+  <main>
+    <body>
+      <nav>
+        <div class="logo">Red Skillet</div>
+        <ul class="navbar">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="orderonline.html">Order Online</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <h1>Order Online</h1>
+      <form id="order-form" action="/process-order" method="POST">
+        <section class="menu-list">
+          <div class="menu-item">
+            <img src="../images/bhurji.jpg" alt="bhurji" id="bhurji-image" />
+            <h2>Bhurji</h2>
+            <p>
+              A popular Indian-style scrambled eggs recipe that's packed with
+              assorted veggies, fresh ginger, and warm spices.
+            </p>
+            <p>Price: $8.99</p>
+
+            <div class="input-container">
+              <label for="bhurji-quantity">Quantity:</label>
+              <input
+                type="number"
+                id="bhurji-quantity"
+                name="bhurji-quantity"
+                min="1"
+                max="10"
+                value="1"
+              />
+            </div>
+
+            <button
+              type="button"
+              onclick="addToCart('Bhurji', 8.99, 'bhurji-quantity')"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="menu-item">
+            <img src="../images/burrito.jpg" alt="burrito" id="burrito-image" />
+            <h2>Bowser's Big Bean Burrito</h2>
+            <p>
+              A chunky burrito flavor-packed delight with layers of spicy beans,
+              tender chicken, and crunchy vegetables all wrapped up in a warm
+              tortilla.
+            </p>
+            <p>Price: $8.99</p>
+
+            <div class="input-container">
+              <label for="bhurji-quantity">Quantity:</label>
+              <input
+                type="number"
+                id="burrito-quantity"
+                name="burrito-quantity"
+                min="1"
+                max="10"
+                value="1"
+              />
+            </div>
+
+            <button
+              type="button"
+              onclick="addToCart('Bowser\'s Big Bean Burrito', 8.99, 'burrito-quantity')"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="menu-item">
+            <img src="../images/pepperoni.png" alt="pizza" id="pizza-image" />
+            <h2>Boneless Pizza</h2>
+            <p>
+              A unique twist on the classic pizza experience. Includes 2 Liters
+              of Coke.
+            </p>
+            <p>Price: $20.99</p>
+
+            <div class="input-container">
+              <label for="pizza-quantity">Quantity:</label>
+              <input
+                type="number"
+                id="pizza-quantity"
+                name="pizza-quantity"
+                min="1"
+                max="10"
+                value="1"
+              />
+            </div>
+
+            <button
+              type="button"
+              onclick="addToCart('Boneless Pizza', 20.99, 'pizza-quantity')"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="../images/dino-nuggets.jpg"
+              alt="dino nuggets"
+              id="nuggets-image"
+            />
+            <h2>Dino Nuggets</h2>
+            <p>
+              Crispy dinosaur chicken nuggets, golden french fries, white
+              chocolate pretzel "bones," and chocolate "tar pit" dipping sauce.
+            </p>
+            <p>Price: $8.99</p>
+
+            <div class="input-container">
+              <label for="nuggets-quantity">Quantity:</label>
+              <input
+                type="number"
+                id="nuggets-quantity"
+                name="nuggets-quantity"
+                min="1"
+                max="10"
+                value="1"
+              />
+            </div>
+
+            <button
+              type="button"
+              onclick="addToCart('Dino Nuggets', 8.99, 'nuggets-quantity')"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="../images/krabby patty gif.gif"
+              alt="hamburger"
+              id="patty-image"
+            />
+            <h2>Krabby Patty</h2>
+            <p>
+              Featuring a succulent patty made from a secret blend of
+              ingredients, topped with lettuce, tomatoes, pickles, and a drop of
+              special sauce, all sandwiched between soft sesame seed buns.
+            </p>
+            <p>Price: $13.99</p>
+
+            <div class="input-container">
+              <label for="patty-quantity">Quantity:</label>
+              <input
+                type="number"
+                id="patty-quantity"
+                name="patty-quantity"
+                min="1"
+                max="10"
+                value="1"
+              />
+            </div>
+
+            <button
+              type="button"
+              onclick="addToCart('Krabby Patty', 13.99, 'patty-quantity')"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="menu-item">
+            <img
+              src="../images/big smoke.jpg"
+              alt="combo meal"
+              id="smoke-image"
+            />
+            <h2>Big Smoke’s Combo Meal</h2>
+            <p>
+              Two number 9s, a number 9 large, a number 6 with extra dip, a
+              number 7, two number 45s, one with cheese, and a large soda.
+            </p>
+            <p>Price: $100.99</p>
+
+            <div class="input-container">
+              <label for="smoke-quantity">Quantity:</label>
+              <input
+                type="number"
+                id="smoke-quantity"
+                name="smoke-quantity"
+                min="1"
+                max="10"
+                value="1"
+              />
+            </div>
+
+            <button
+              type="submit"
+              onclick="addToCart('Big Smoke’s Combo Meal', 100.99, 'smoke-quantity')"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <!-- Shopping Cart -->
+          <div id="shopping-cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: <span id="cart-total">$0.00</span></p>
+            <button type="submit" id="place-order-btn">Place Order</button>
+            <button type="button" id="clear-order-btn">Clear Order</button>
+          </div>
+        </section>
+      </form>
+    </body>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        The Albert and Mamie George Building, 14000 University Blvd, Sugar Land,
+        TX 77479
+      </div>
+      <div>
+        Hours of Operation:<br />
+        8:00 a.m - 4:00 p.m
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts/order-script.js"></script>
+</html>

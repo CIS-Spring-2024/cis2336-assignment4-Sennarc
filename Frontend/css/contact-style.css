@@ -1,0 +1,60 @@
+/* Global Styles */
+body {
+  font-family: "Lexend", arial;
+  background-color: #333;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+main {
+  margin-top: 50px; /* Adjust according to the height of your header */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 10px 0;
+  background: #c8102e;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 10px 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: "Lobster", cursive;
+  position: fixed; /* Add position relative */
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  position: relative;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.navbar a:hover {
+  background-color: #962020;
+  border-radius: 5px;
+}
